@@ -1,7 +1,5 @@
 import axios from "axios";
 
-// All requests go to /api/* — Vite proxies them to http://localhost:8000 in dev.
-// In production, Apache proxies them instead. The frontend code never changes.
 const api = axios.create({ baseURL: "/api" });
 
 export async function fetchTeams() {

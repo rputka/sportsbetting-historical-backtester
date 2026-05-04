@@ -87,7 +87,7 @@ export default function GamesPage() {
   }, [team, season, book, dateFrom, dateTo]);
 
   // Re-fetch whenever page changes OR whenever any filter changes (load recreates when filters change)
-  useEffect(() => { load(page); }, [page, load]); // eslint-disable-line
+  useEffect(() => { load(page); }, [page, load]); 
 
   function handleFilter(e) {
     e.preventDefault();

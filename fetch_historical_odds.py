@@ -1,16 +1,4 @@
-"""
-Standalone script: pull historical NBA odds from the-odds-api and write to CSV.
-
-Usage:
-    python fetch_historical_odds.py \
-        --start-date 2024-10-22 \
-        --end-date   2024-11-22 \
-        --output     odds.csv \
-        --markets    h2h,spreads,totals,player_points,player_rebounds,player_assists \
-        --bookmaker  draftkings
-
-Requires: httpx  (pip install httpx)
-"""
+"""Pull NBA historical odds from the-odds-api into a CSV (uses httpx)."""
 
 import argparse
 import csv

@@ -80,7 +80,7 @@ export default function BacktestPage() {
     if (searchParams.has("market")) {
       handleRun();
     }
-  }, []); // eslint-disable-line
+  }, []); 
 
   function handleMarketChange(e) {
     const m = e.target.value;
